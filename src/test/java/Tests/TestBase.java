@@ -1,14 +1,14 @@
 package Tests;
 
+import Utilies.Helper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
@@ -44,10 +44,17 @@ public class TestBase {
 
    @AfterClass
     public void QuitBroswer() throws InterruptedException {
+
     Thread.sleep(3000);
     driver.quit();
     }
 
+    @AfterMethod()
+    public void screenShotFailure(ITestResult result) throws IOException {
+        System.out.println("fail...");
+        System.out.println("taking screenshot.....");
+        Helper.captureScreen(driver,result.getName());
+    }
 
 
 

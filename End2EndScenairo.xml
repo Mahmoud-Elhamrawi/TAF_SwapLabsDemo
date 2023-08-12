@@ -4,8 +4,7 @@
     <parameter name="Browser" value="firefox"></parameter>
     <test name="Nopackage" preserve-order="false" >
         <classes>
-            <class name="Tests.Login.TC01_LoginTest" />
-            <class name="Tests.Login.TC01_2_invalidLoginTest" />
+            <class name="Tests.End2EndScenairo.TC02_CheckOutScenairoTest"></class>
         </classes>
     </test>
 </suite>
