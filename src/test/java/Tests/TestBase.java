@@ -51,9 +51,13 @@ public class TestBase {
 
     @AfterMethod()
     public void screenShotFailure(ITestResult result) throws IOException {
-        System.out.println("fail...");
-        System.out.println("taking screenshot.....");
-        Helper.captureScreen(driver,result.getName());
+        if(result.getStatus()==ITestResult.FAILURE)
+        {
+            System.out.println("fail...");
+            System.out.println("taking screenshot.....");
+            Helper.captureScreen(driver,result.getName());
+        }
+
     }
 
 

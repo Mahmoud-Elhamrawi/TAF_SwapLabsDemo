@@ -53,11 +53,13 @@
                 <version>3.1.2</version>
 
                 <configuration>
+
                     <suiteXmlFiles>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>${testNGSuite.xml}</suiteXmlFile>
+
+                        <suiteXmlFile>${testNGSuite}</suiteXmlFile>
                     </suiteXmlFiles>
-                </configuration>
+
+            </configuration>
 
             </plugin>
 
@@ -68,7 +70,7 @@
 
 <profiles>
     <profile>
-        <id>Feature based</id>
+        <id>FeatureBased</id>
         <activation>
             <activeByDefault>true</activeByDefault>
             <property>
@@ -94,9 +96,6 @@
             <testNGSuite>End2EndScenairo.xml</testNGSuite>
         </properties>
     </profile>
-
-
-
 </profiles>
 
 
