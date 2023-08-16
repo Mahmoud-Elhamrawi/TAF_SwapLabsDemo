@@ -2,7 +2,7 @@
 
 
 <suite name="swaglabDemo" verbose="1" >
-    <parameter name="Browser" value="headless"></parameter>
+    <parameter name="Browser" value="chrome"></parameter>
     <test name="Nopackage" preserve-order="false" >
         <classes>
             <class name="Tests.End2EndScenairo.TC02_CheckOutScenairoTest"></class>

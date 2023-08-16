@@ -90,12 +90,12 @@
     </profile>
 
     <profile>
-        <id>End2EndScenarios</id>
+        <id>End2EndScenario</id>
         <activation>
             <activeByDefault>true</activeByDefault>
             <property>
                 <name>environment</name>
-                <value>featureBased</value>
+                <value>End2EndScenario</value>
             </property>
         </activation>
         <properties>
