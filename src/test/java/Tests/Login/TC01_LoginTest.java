@@ -32,7 +32,7 @@ public class TC01_LoginTest extends TestBase {
     public void LogOuT() throws InterruptedException {
         logOutPage = new P02_LogOutPage(driver);
         logOutPage.clickOnMenueBtn();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         logOutPage.clickOnLogOutLink();
         String actualUrlLogOut ="https://www.saucedemo.com/";
         String expectUrlLogOut =driver.getCurrentUrl();
