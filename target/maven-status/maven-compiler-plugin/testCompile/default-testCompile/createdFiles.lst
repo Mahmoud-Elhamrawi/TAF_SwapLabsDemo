@@ -1,0 +1,5 @@
+Tests\End2EndScenairo\TC02_CheckOutScenairoTest.class
+Tests\Login\TC01_LoginTest.class
+Tests\TestBase.class
+Tests\Login\TC01_2_invalidLoginTest.class
+Utilies\Helper.class

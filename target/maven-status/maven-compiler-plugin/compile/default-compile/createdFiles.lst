@@ -1,0 +1,8 @@
+pages\End2EndScenairos\ChekOutOverView.class
+pages\End2EndScenairos\ChekOutFillInfo.class
+pages\HomePage.class
+pages\LoginPages\P02_LogOutPage.class
+pages\LoginPages\P01_loginPage.class
+pages\PageBase.class
+pages\End2EndScenairos\CheckOutCompelet.class
+pages\End2EndScenairos\CartPage.class
